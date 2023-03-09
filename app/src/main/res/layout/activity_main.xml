@@ -40,24 +40,18 @@
         <Button
             android:id="@+id/buttonLogIn"
             style="@style/ButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:text="@string/log_in" />
 
         <Button
             android:id="@+id/buttonCreateWallet"
             style="@style/ButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:text="@string/create_wallet" />
 
         <Button
             android:id="@+id/buttonImportWallet"
             style="@style/ButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/import_wallet" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

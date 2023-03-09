@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Cryptox" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#392D7D</item>
+        <item name="colorPrimary">@color/myColor1</item>
         <item name="colorPrimaryVariant">#94C0C0</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

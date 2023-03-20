@@ -4,4 +4,13 @@
     <string name="log_in">Log In</string>
     <string name="create_wallet">Create Wallet</string>
     <string name="import_wallet">Import Wallet</string>
+    <string name="full_name">Full name</string>
+    <string name="ed_full_name_example">Marry Elliot</string>
+    <string name="email">Email</string>
+    <string name="ed_email_example">mary.elliot@mail.com</string>
+    <string name="password">Password</string>
+    <string name="ed_password_example">**************</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registered">Already have an account ?</string>
+    <string name="sign_in">Sign In</string>
 </resources>

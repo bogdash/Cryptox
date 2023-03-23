@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.cryptox.SignUpActivity" />
+        <activity android:name="com.example.cryptox.MarketActivity"/>
     </application>
 
 </manifest>

@@ -13,4 +13,7 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="registered">Already have an account ?</string>
     <string name="sign_in">Sign In</string>
+    <string name="market">Market</string>
+    <string name="search">Search</string>
+    <string name="bell">Bell</string>
 </resources>

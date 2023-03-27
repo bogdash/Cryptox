@@ -19,4 +19,41 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <LinearLayout
+        android:id="@+id/segmented_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="63dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/ButtonStyle.Pressed"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/all" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/ButtonStyle.Pressed"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/favorites" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/ButtonStyle.NoPressed"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/top" />
+    </LinearLayout>
+
 </LinearLayout>

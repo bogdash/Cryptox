@@ -10,4 +10,31 @@
         <item name="android:gravity">center</item>
         <item name="fontFamily">@font/inter</item>
     </style>
+
+    <style name="ButtonStyle.Pressed" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">61dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">2.5dp</item>
+        <item name="android:layout_marginEnd">2.5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_corner_no_pressed_button</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+    <style name="ButtonStyle.NoPressed" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">61dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">2.5dp</item>
+        <item name="android:layout_marginEnd">2.5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_corner_pressed_button</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
 </resources>

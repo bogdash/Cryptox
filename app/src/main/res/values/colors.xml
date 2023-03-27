@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="myColor1">#392D7D</color>
     <color name="myColor2">#94C0C0</color>
+    <color name="segmentedButtonNoPressed">#B3C28A</color>
+    <color name="segmentedButtonPressed">#8CB78D</color>
+
 </resources>

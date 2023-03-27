@@ -16,4 +16,7 @@
     <string name="market">Market</string>
     <string name="search">Search</string>
     <string name="bell">Bell</string>
+    <string name="all">All</string>
+    <string name="favorites">Favorites</string>
+    <string name="top">Top</string>
 </resources>

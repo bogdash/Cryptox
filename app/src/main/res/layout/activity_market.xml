@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:background="#94C0C0">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/myColor2"
         android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:title="@string/market"
         app:titleMarginStart="20dp"
         app:titleTextAppearance="@style/Toolbar.TitleText"
@@ -23,11 +27,12 @@
         android:id="@+id/segmented_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="63dp"
         android:background="@drawable/rounded_linear_layout"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <Button
             android:id="@+id/button"
@@ -36,7 +41,8 @@
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
-            android:text="@string/all" />
+            android:text="@string/all"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button2"
@@ -44,7 +50,8 @@
             android:layout_width="114dp"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="@string/favorites" />
+            android:text="@string/favorites"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button3"
@@ -53,7 +60,32 @@
             android:layout_height="30dp"
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:text="@string/top" />
+            android:text="@string/top"
+            tools:ignore="TouchTargetSizeCheck" />
+
     </LinearLayout>
 
-</LinearLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segmented_buttons">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="@color/white">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

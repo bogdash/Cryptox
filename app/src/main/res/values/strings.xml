@@ -1,9 +1,12 @@
 <resources>
+    <!--Splashscreen Activity-->
     <string name="app_name">Cryptox</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_in">Log In</string>
     <string name="create_wallet">Create Wallet</string>
     <string name="import_wallet">Import Wallet</string>
+
+    <!--SignUp Activity-->
     <string name="full_name">Full name</string>
     <string name="ed_full_name_example">Marry Elliot</string>
     <string name="email">Email</string>
@@ -13,17 +16,39 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="registered">Already have an account ?</string>
     <string name="sign_in">Sign In</string>
+
+    <!--Market Activity-->
+
+    <!--Market Toolbar-->
     <string name="market">Market</string>
     <string name="search">Search</string>
     <string name="bell">Bell</string>
+
+    <!--Market Segmented Button-->
     <string name="all">All</string>
     <string name="favorites">Favorites</string>
     <string name="top">Top</string>
+
+    <!--Market Bottom Navigation Bar-->
     <string name="home">Home</string>
     <string name="trends">Trends</string>
     <string name="qr_scanner">QRScanner</string>
     <string name="user">User</string>
+
+    <!--Market Fragment-->
     <string name="btc">BTC/USD</string>
-    <string name="cost">$11.039232</string>
-    <string name="name_coin">Bitcoin</string>
+    <string name="cost_bitcoin">$11.039232</string>
+    <string name="name_coin_bitcoin">Bitcoin</string>
+
+    <string name="ltc">LTC/USD</string>
+    <string name="cost_litecoin">$177.80</string>
+    <string name="name_coin_litecoin">Litecoin</string>
+
+    <string name="eth">ETH/USD</string>
+    <string name="cost_etherium">$1.2792</string>
+    <string name="name_coin_etherium">Bitcoin</string>
+
+    <string name="xrp">XRP/USD</string>
+    <string name="cost_ripple">$161.511</string>
+    <string name="name_coin_ripple">Ripple</string>
 </resources>

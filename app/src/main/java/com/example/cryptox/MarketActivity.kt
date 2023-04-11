@@ -16,6 +16,7 @@ class MarketActivity : AppCompatActivity() {
         binding = ActivityMarketBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        replaceFragment(MarketFragment())
 
         loadFragment(HomeFragment.newInstance())
         binding.bottomNavigationView.setOnItemReselectedListener { item ->
@@ -53,8 +54,14 @@ class MarketActivity : AppCompatActivity() {
                 }
                 else -> false
             }
-
         }
+    }
+
+    private fun replaceFragment(marketFragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_layout, marketFragment)
+        fragmentTransaction.commit()
     }
 
     private fun loadFragment(fragment: Fragment) {

@@ -3,6 +3,7 @@ package com.example.cryptox
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -22,18 +23,19 @@ class MarketFragmentAdapter(private val coinList: ArrayList<Coin>) :
     override fun onBindViewHolder(holder: MarketFragmentHolder, position: Int) {
         val currentItem = coinList[position]
 
-        holder.photo.setImageResource(currentItem.photo)
-        holder.nameCoinUSD.text = currentItem.nameCoinUSD
-        holder.nameCoin.text = currentItem.nameCoin
-        holder.cost.text = currentItem.cost
-        holder.isLiked.setImageResource(currentItem.isLiked)
+        holder.coinImageID.setImageResource(currentItem.coinImageID)
+        holder.shortNameUSDName.text = currentItem.shortNameUSDName
+        holder.fullName.text = currentItem.fullName
+        holder.priceString.text = currentItem.priceString
+        holder.likedImageID.setImageResource(currentItem.likedImageID)
+
     }
 
     class MarketFragmentHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val photo : ImageView = itemView.findViewById(R.id.imageView)
-        val nameCoinUSD: TextView = itemView.findViewById(R.id.tv_name_coin)
-        val nameCoin: TextView = itemView.findViewById(R.id.tv_name)
-        val cost: TextView = itemView.findViewById(R.id.tv_cost)
-        val isLiked: ImageView = itemView.findViewById(R.id.iv_is_liked)
+        val coinImageID : ImageView = itemView.findViewById(R.id.imageView)
+        val shortNameUSDName: TextView = itemView.findViewById(R.id.tv_name_coin)
+        val fullName: TextView = itemView.findViewById(R.id.tv_name)
+        val priceString: TextView = itemView.findViewById(R.id.tv_cost)
+        val likedImageID: ImageButton = itemView.findViewById(R.id.ib_is_liked)
     }
 }

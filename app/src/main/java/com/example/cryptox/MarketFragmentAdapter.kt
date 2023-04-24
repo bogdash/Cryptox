@@ -29,6 +29,10 @@ class MarketFragmentAdapter(private val coinList: ArrayList<Coin>) :
         holder.priceString.text = currentItem.priceString
         holder.likedImageID.setImageResource(currentItem.likedImageID)
 
+        holder.likedImageID.setOnClickListener {
+            currentItem.isLiked = !currentItem.isLiked
+            holder.likedImageID.setImageResource(currentItem.likedImageID)
+        }
     }
 
     class MarketFragmentHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

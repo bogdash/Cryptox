@@ -46,7 +46,7 @@
 
     <string name="eth">ETH/USD</string>
     <string name="cost_etherium">$1.2792</string>
-    <string name="name_coin_etherium">Bitcoin</string>
+    <string name="name_coin_etherium">Etherium</string>
 
     <string name="xrp">XRP/USD</string>
     <string name="cost_ripple">$161.511</string>

@@ -19,7 +19,7 @@ class MarketActivity : AppCompatActivity() {
         replaceFragment(MarketFragment())
 
         loadFragment(HomeFragment.newInstance())
-        binding.bottomNavigationView.setOnItemReselectedListener { item ->
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
             var fragment: Fragment
             when (item.itemId) {
                 R.id.home_item -> {
